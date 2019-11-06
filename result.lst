@@ -1,0 +1,55 @@
+SQL> l
+  1  select *
+  2  from Stocks
+  3* where Storecode = 'CENT'and Quantity < Reorder
+SQL> clear buffer
+buffer cleared
+SQL> select *
+  2  from Stocks;
+Press Return to Continue
+   STOCKNO STOREC DESCRIPTION                QUANTITY UNITS           REORDER      PRICE SUPPCO     
+---------- ------ ------------------------ ---------- ------------ ---------- ---------- ------     
+       102 CENT   A4 headed paper                  17 Ream                 10       4.11 S3         
+       103 CENT   Photocopying paper               30 Ream                 30       2.98 S2         
+       104 TYP    Coloured paper                   13 Ream                 10       5.15 S2         
+       105 TYP    Sticky labels                    45 Box                  10       4.83 S4         
+       106 CENT   Sellotape                        21 Roll                 10        .45 S4         
+       107 CENT   Drawing pins                     37 Box                  10        .47 S4         
+       108 CENT   Staples                          11 Box                  15        .42 S4         
+       109 CENT   Window envelopes                 22 Box                  15       2.15 S4         
+       110 LEG    Large envelopes                   8 Box                  10       2.57 S3         
+       111 CENT   Black ballpoints                  6 Box 24               10       2.42 S4         
+       112 LEG    Coloured pens                    17 Box 24               10       3.65 S3         
+       113 CENT   HB pencils                       22 Box 24               10       1.97 S3         
+       114 CENT   Fluorescent markers               2 Box 6                10       1.89 S3         
+Press Return to Continue
+   STOCKNO STOREC DESCRIPTION                QUANTITY UNITS           REORDER      PRICE SUPPCO     
+---------- ------ ------------------------ ---------- ------------ ---------- ---------- ------     
+       115 CENT   12 inch rulers                   23                      10        .22 S4         
+       116 IT     3.5 in. floppy disks             14 Box 10               20      12.85 S2         
+       117 IT     5.25 in. floppy disks            32 Box 10               20      11.38 S2         
+       118 IT     Toner cartridges                  7                      10      32.99 S6         
+       119 TYP    FX-100 printer ribbon            25                      20      23.99 S6         
+       121 CENT   Tipp-ex bottles                  35                      20        .81 S3         
+       122 TYP    Typewriter ribbons               16                      10       6.19 S3         
+       123 TYP    Audio cassettes                   8 Box 10                5       8.58 S3         
+       124 IT     Anti-static wipes                18 Box 50               10       4.95 S3         
+       126 LEG    Sealing wax                       9 Box                   5       7.99 S5         
+       127 LEG    Red binding ribbon               13 Roll                 10       6.47 S5         
+       128 LEG    A3 cream notary paper            21 Ream                 10       7.85 S5         
+       129 LEG    Coloured ink                     22 Bottle               10       3.48 S4         
+Press Return to Continue
+   STOCKNO STOREC DESCRIPTION                QUANTITY UNITS           REORDER      PRICE SUPPCO     
+---------- ------ ------------------------ ---------- ------------ ---------- ---------- ------     
+       130 WORK   8 x 1 inch wood screws            8 Box                   5       2.85 S1         
+       131 WORK   10 x 1 inch wood screws          13 Box                   5       1.35 S1         
+       132 WORK   13 amp electrical wire           22 Roll                  5       1.84 S1         
+       134 WORK   Electrical solder                11 Roll                  5       1.59 S1         
+       135 WORK   White spirit                      6 Bottle                5        .98 S1         
+       137 WORK   Masking tape                      8 Roll                 10        .49 S1         
+       138 WORK   Door hinges                      24 Pair                  5       2.14 S1         
+       139 WORK   Angle brackets                   18 Pair                  6       2.85 S1         
+
+34 rows selected.
+
+SQL> spool off
