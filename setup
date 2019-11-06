@@ -1,0 +1,42 @@
+#!/bin/csh -f
+
+echo User home directory is : $HOME
+echo
+if (-e $HOME/oracle) then
+  echo Oracle directory exists
+  echo
+  echo copy files from $PWD to $HOME/oracle
+  echo
+  echo copying...
+
+  cp -r /well/oracle/CM0239/. $HOME/oracle
+
+  echo
+  echo files copied
+  echo
+  echo You can now login to Oracle and run makeDB and fillDB.
+  echo 
+else
+  echo
+  echo Oracle directory does not exist
+  echo
+  echo Creating Oracle directory as $HOME/oracle
+  mkdir $HOME/oracle
+  if (-e $HOME/oracle) then
+    echo Oracle directory created sucessfully
+    echo
+    echo now copy files from $PWD to $HOME/oracle
+
+    cp -r /well/oracle/CM0239/. $HOME/oracle
+
+    echo
+    echo files copied
+    echo
+    echo You can now login to Oracle and run makeDB and fillDB.
+    echo
+  else
+    echo error in creating oracle directory
+  endif
+ 
+endif
+
