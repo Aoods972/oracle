@@ -1,188 +1,73 @@
-SP2-0103: Nothing in SQL buffer to run.
 
-   STOCKNO DESCRIPTION                QUANTITY                                  
----------- ------------------------ ----------                                  
-       107 Drawing pins                     37                                  
-       121 Tipp-ex bottles                  35                                  
-       103 Photocopying paper               30                                  
-       115 12 inch rulers                   23                                  
-       113 HB pencils                       22                                  
-       109 Window envelopes                 22                                  
-       106 Sellotape                        21                                  
+   STOCKNO    DESCRIPTION                   QUANTITY                                                                                                                                                    
+==========    ========================    ==========                                                                                                                                                    
+       107    Drawing pins                        37                                                                                                                                                    
+       121    Tipp-ex bottles                     35                                                                                                                                                    
+       103    Photocopying paper                  30                                                                                                                                                    
+       115    12 inch rulers                      23                                                                                                                                                    
+       113    HB pencils                          22                                                                                                                                                    
+       109    Window envelopes                    22                                                                                                                                                    
+       106    Sellotape                           21                                                                                                                                                    
 
-7 rows selected.
+SUPP    SUPPNAME                          STREET                      TOWN                COUNTY              POSTCODE      TELNO               FAXNO                                                   
+====    ==============================    ========================    ================    ================    ==========    ================    ================                                        
+S3      Fastorder Stationers              Riverside View              Newport             Gwent               NP1  7XJ      0633 89898          0633 89899                                              
+S5      Legal Services Ltd.               Westway Road                London                                  N8  8PA       081 333 1246        081 333 5490                                            
+S6      Business Systems Ltd.             155 Stradleigh Place        London                                  E10 6LL       081 535 3535        081 535 3355                                            
 
+STOREC    COUNT(STOCKNO)    AVG(PRICE)                                                                                                                                                                  
+======    ==============    ==========                                                                                                                                                                  
+TYP                    5         9.748                                                                                                                                                                  
+IT                     4       15.5425                                                                                                                                                                  
+LEG                    6         5.335                                                                                                                                                                  
 
-   STOCKNO DESCRIPTION                QUANTITY                                  
----------- ------------------------ ----------                                  
-       107 Drawing pins                     37                                  
-       121 Tipp-ex bottles                  35                                  
-       103 Photocopying paper               30                                  
-       115 12 inch rulers                   23                                  
-       113 HB pencils                       22                                  
-       109 Window envelopes                 22                                  
-       106 Sellotape                        21                                  
+TOWN                COUNT(TOWN)                                                                                                                                                                         
+================    ===========                                                                                                                                                                         
+London                        2                                                                                                                                                                         
 
-7 rows selected.
+   STOCKNO    DESCRIPTION                 Number of Orders                                                                                                                                              
+==========    ========================    ==============================================================================================================================================================
+       110    Large envelopes             No Orders                                                                                                                                                     
+       116    3.5 in. floppy disks        1                                                                                                                                                             
+       118    Toner cartridges            No Orders                                                                                                                                                     
+       106    Sellotape                   1                                                                                                                                                             
+       107    Drawing pins                No Orders                                                                                                                                                     
+       111    Black ballpoints            1                                                                                                                                                             
+       123    Audio cassettes             No Orders                                                                                                                                                     
+       130    8 x 1 inch wood screws      No Orders                                                                                                                                                     
+       134    Electrical solder           No Orders                                                                                                                                                     
+       109    Window envelopes            No Orders                                                                                                                                                     
+       126    Sealing wax                 No Orders                                                                                                                                                     
+       131    10 x 1 inch wood screws     No Orders                                                                                                                                                     
+       135    White spirit                No Orders                                                                                                                                                     
+       104    Coloured paper              No Orders                                                                                                                                                     
+       132    13 amp electrical wire      No Orders                                                                                                                                                     
+       139    Angle brackets              No Orders                                                                                                                                                     
+       119    FX-100 printer ribbon       No Orders                                                                                                                                                     
+       122    Typewriter ribbons          No Orders                                                                                                                                                     
+       102    A4 headed paper             No Orders                                                                                                                                                     
+       114    Fluorescent markers         No Orders                                                                                                                                                     
+       117    5.25 in. floppy disks       1                                                                                                                                                             
+       124    Anti-static wipes           No Orders                                                                                                                                                     
+       127    Red binding ribbon          No Orders                                                                                                                                                     
+       128    A3 cream notary paper       No Orders                                                                                                                                                     
+       137    Masking tape                No Orders                                                                                                                                                     
+       138    Door hinges                 No Orders                                                                                                                                                     
+       103    Photocopying paper          No Orders                                                                                                                                                     
 
-rows will be truncated
+   STOCKNO    DESCRIPTION                 Number of Orders                                                                                                                                              
+==========    ========================    ==============================================================================================================================================================
+       129    Coloured ink                No Orders                                                                                                                                                     
+       105    Sticky labels               No Orders                                                                                                                                                     
+       108    Staples                     1                                                                                                                                                             
+       112    Coloured pens               No Orders                                                                                                                                                     
+       113    HB pencils                  No Orders                                                                                                                                                     
+       115    12 inch rulers              No Orders                                                                                                                                                     
+       121    Tipp-ex bottles             No Orders                                                                                                                                                     
 
-rows will be truncated
-
-rows will be truncated
-
-
-SUPP SUPPNAME                       STREET                   TOWN             CO
----- ------------------------------ ------------------------ ---------------- --
-S3   Fastorder Stationers           Riverside View           Newport          Gw
-S5   Legal Services Ltd.            Westway Road             London             
-S6   Business Systems Ltd.          155 Stradleigh Place     London             
-
-rows will be truncated
-
-rows will be truncated
-
-rows will be truncated
-
-
-SUPP SUPPNAME                       STREET                   TOWN             CO
----- ------------------------------ ------------------------ ---------------- --
-S3   Fastorder Stationers           Riverside View           Newport          Gw
-S5   Legal Services Ltd.            Westway Road             London             
-S6   Business Systems Ltd.          155 Stradleigh Place     London             
-
-
-STOREC COUNT(STOCKNO) AVG(PRICE)                                                
------- -------------- ----------                                                
-TYP                 5      9.748                                                
-IT                  4    15.5425                                                
-LEG                 6      5.335                                                
-
-
-STOREC COUNT(STOCKNO) AVG(PRICE)                                                
------- -------------- ----------                                                
-TYP                 5      9.748                                                
-IT                  4    15.5425                                                
-LEG                 6      5.335                                                
-
-
-TOWN             COUNT(TOWN)                                                    
----------------- -----------                                                    
-London                     2                                                    
-
-
-TOWN             COUNT(TOWN)                                                    
----------------- -----------                                                    
-London                     2                                                    
-
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       110 Large envelopes          No Orders                                   
-       116 3.5 in. floppy disks     1                                           
-       118 Toner cartridges         No Orders                                   
-       106 Sellotape                1                                           
-       107 Drawing pins             No Orders                                   
-       111 Black ballpoints         1                                           
-       123 Audio cassettes          No Orders                                   
-       130 8 x 1 inch wood screws   No Orders                                   
-       134 Electrical solder        No Orders                                   
-       109 Window envelopes         No Orders                                   
-       126 Sealing wax              No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       131 10 x 1 inch wood screws  No Orders                                   
-       135 White spirit             No Orders                                   
-       104 Coloured paper           No Orders                                   
-       132 13 amp electrical wire   No Orders                                   
-       139 Angle brackets           No Orders                                   
-       119 FX-100 printer ribbon    No Orders                                   
-       122 Typewriter ribbons       No Orders                                   
-       102 A4 headed paper          No Orders                                   
-       114 Fluorescent markers      No Orders                                   
-       117 5.25 in. floppy disks    1                                           
-       124 Anti-static wipes        No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       127 Red binding ribbon       No Orders                                   
-       128 A3 cream notary paper    No Orders                                   
-       137 Masking tape             No Orders                                   
-       138 Door hinges              No Orders                                   
-       103 Photocopying paper       No Orders                                   
-       129 Coloured ink             No Orders                                   
-       105 Sticky labels            No Orders                                   
-       108 Staples                  1                                           
-       112 Coloured pens            No Orders                                   
-       113 HB pencils               No Orders                                   
-       115 12 inch rulers           No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       121 Tipp-ex bottles          No Orders                                   
-
-34 rows selected.
-
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       110 Large envelopes          No Orders                                   
-       116 3.5 in. floppy disks     1                                           
-       118 Toner cartridges         No Orders                                   
-       106 Sellotape                1                                           
-       107 Drawing pins             No Orders                                   
-       111 Black ballpoints         1                                           
-       123 Audio cassettes          No Orders                                   
-       130 8 x 1 inch wood screws   No Orders                                   
-       134 Electrical solder        No Orders                                   
-       109 Window envelopes         No Orders                                   
-       126 Sealing wax              No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       131 10 x 1 inch wood screws  No Orders                                   
-       135 White spirit             No Orders                                   
-       104 Coloured paper           No Orders                                   
-       132 13 amp electrical wire   No Orders                                   
-       139 Angle brackets           No Orders                                   
-       119 FX-100 printer ribbon    No Orders                                   
-       122 Typewriter ribbons       No Orders                                   
-       102 A4 headed paper          No Orders                                   
-       114 Fluorescent markers      No Orders                                   
-       117 5.25 in. floppy disks    1                                           
-       124 Anti-static wipes        No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       127 Red binding ribbon       No Orders                                   
-       128 A3 cream notary paper    No Orders                                   
-       137 Masking tape             No Orders                                   
-       138 Door hinges              No Orders                                   
-       103 Photocopying paper       No Orders                                   
-       129 Coloured ink             No Orders                                   
-       105 Sticky labels            No Orders                                   
-       108 Staples                  1                                           
-       112 Coloured pens            No Orders                                   
-       113 HB pencils               No Orders                                   
-       115 12 inch rulers           No Orders                                   
-
-   STOCKNO DESCRIPTION              Number of Orders                            
----------- ------------------------ --------------------------------------------
-       121 Tipp-ex bottles          No Orders                                   
-
-34 rows selected.
-
-
-STOREC COUNT(STOCKNO)                                                           
------- --------------                                                           
-CENT               11                                                           
-
-
-STOREC COUNT(STOCKNO)                                                           
------- --------------                                                           
-CENT               11                                                           
-
+STOREC    COUNT(STOCKNO)                                                                                                                                                                                
+======    ==============                                                                                                                                                                                
+CENT                  11                                                                                                                                                                                
 Enter value for reporting_officer: Andrew Woods
 
                                                                                       Current Stock Value by Store                                                                                      
