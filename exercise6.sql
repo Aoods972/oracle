@@ -19,8 +19,8 @@ center SYSDATE skip 2;
 btitle center format 999 SQL.PNO;
 
 break on storecode skip 2 on Report;
-compute sum label Store Total of (Price*Quantity) on Storecode;
-compute sum label Grand Total of (Price*Quantity) on Report;
+compute sum label Store_Total of (Price*Quantity) on Storecode;
+compute sum label Grand_Total of (Price*Quantity) on Report;
 
 
 select storecode, description, price, quantity, (Price * Quantity)
