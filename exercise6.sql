@@ -26,4 +26,3 @@ compute sum label Grand_Total of (Price*Quantity) on Report;
 select storecode, description, price, quantity, (Price * Quantity)
 from stocks
 order by storecode;
-/*No touching this code unless date can be added*/
