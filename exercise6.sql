@@ -1,6 +1,6 @@
 
 
-define Current_Time = CURRENT_DATE;
+define Current_Time = select current_date from dual;
 col StoreCode format A12 heading 'Store Code';
 col Description format A30 heading 'Item Description';
 col Price format $999,9990.99 heading 'Price';
@@ -11,13 +11,13 @@ set Pause off;
 set feedback off;
 set space 6;
 set newpage 2;
-set pagesize 30;
+set pagesize 50;
 set linesize 200;
 set underline =;
 set RecSepChar '*';
-ttitle center 'Current Stock Value by Store' skip 2 -
-center 'Prepared by ' &reporting_officer skip 2 -
-center Current_Time skip 2;
+ttitle left 'Current Stock Value by Store' skip 2 -
+left 'Prepared by ' &reporting_officer skip 2 -
+left Current_Time skip 2;
 btitle center format 999 SQL.PNO;
 
 break on storecode skip 2 on Report;
