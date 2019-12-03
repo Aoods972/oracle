@@ -10,12 +10,12 @@ set feedback off;
 set space 6;
 set newpage 2;
 set pagesize 70;
-set linesize 70;
+set linesize 110;
 set underline =;
 set RecSepChar '*';
 ttitle center 'Current Stock Value by Store' skip 2 -
 center 'Prepared by ' &reporting_officer skip 2 -
-center select SYSDATE from dual skip 2;
+center  skip 2;
 btitle center format 999 SQL.PNO;
 
 break on storecode skip 2 on Report;
