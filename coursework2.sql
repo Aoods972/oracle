@@ -1,3 +1,44 @@
+#cw 2
+
+Query1:
+Select stockno, description, Quantity
+from Stocks
+where Quantity > 20
+and StoreCode = 'CENT'
+Order By Quantity desc;
+
+Query2:
+Select * from Suppliers
+where town = 'London'
+Or Postcode like '%NP%';
+
+Query3:
+Select Storecode, count(stockNo), avg(Price)
+From Stocks
+Group by StoreCode
+Having avg(Price) > (Select avg(Price) from Stocks);
+
+Query4:
+Select town, count(town)
+from Suppliers
+Group By town
+Having count(town) >= 2;
+
+Query5:
+Select stocks.stockno, stocks.description, replace(count(orderno),0, 'No Orders') "Number of Orders"
+from stocks, orderitemsdescribe
+where stocks.stockno = orderitems.stockno(+)
+group by stocks.stockno, stocks.description;
+
+Query6:
+Select storecode, sum(qtyord * orderno)
+from stocks, orderitems
+where stocks.stockno = orderitems.stockNo
+group by storecode
+order by sum(qtyord * orderno) desc
+fetch next 1 row only;
+
+Query7: Creating a Report
 clear screen;
 accept Report_File char prompt 'Enter a filename for Summary Report ';
 col StoreCode format A8 heading 'Store Code';
