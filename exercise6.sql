@@ -1,5 +1,5 @@
 
-col StoreCode format A14 heading 'Store Code';
+col StoreCode format A12 heading 'Store Code';
 col Description format A30 heading 'Item Description';
 col Price format $999,9990.99 heading 'Price';
 col Quantity format 9999 heading 'Quantity';
@@ -9,8 +9,8 @@ set Pause off;
 set feedback off;
 set space 6;
 set newpage 2;
-set pagesize 70;
-set linesize 130;
+set pagesize 30;
+set linesize 150;
 set underline =;
 set RecSepChar '*';
 ttitle center 'Current Stock Value by Store' skip 2 -
