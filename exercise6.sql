@@ -10,7 +10,7 @@ set feedback off;
 set space 6;
 set newpage 2;
 set pagesize 70;
-set linesize 110;
+set linesize 130;
 set underline =;
 set RecSepChar '*';
 ttitle center 'Current Stock Value by Store' skip 2 -
