@@ -10,8 +10,8 @@ set Pause off;
 set feedback off;
 set space 6;
 set newpage 2;
-set pagesize 54;
-set linesize 60;
+set pagesize 70;
+set linesize 150;
 set underline =;
 ttitle center 'Current Stock Value by Store' skip 2 -
 center 'Prepared by ' &reporting_officer skip 2 -
