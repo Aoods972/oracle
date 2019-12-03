@@ -1,5 +1,8 @@
 
 spool CW2_c1647022.txt
+set wrap off;
+set pagesize = 32;
+set linesize = 150;
 /*Query1:*/
 Select stockno, description, Quantity
 from Stocks
@@ -65,5 +68,7 @@ compute sum label Grand_Total of (Price*Quantity) on Report;
 select storecode, description, price, quantity, (Price * Quantity)
 from stocks
 order by storecode;
+
+
 
 spool off;
