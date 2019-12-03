@@ -1,8 +1,8 @@
 
 spool CW2_c1647022.txt
-set wrap off;
-set pagesize = 32;
-set linesize = 150;
+set wrap off
+
+
 /*Query1:*/
 Select stockno, description, Quantity
 from Stocks
@@ -49,8 +49,7 @@ col (Price*Quantity) format $999999.99 heading 'Value';
 
 set Pause off;
 set feedback off;
-set space 6;
-set newpage 2;
+set space 4;
 set pagesize 30;
 set linesize 200;
 set underline =;
