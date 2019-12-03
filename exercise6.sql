@@ -15,7 +15,7 @@ set underline =;
 set RecSepChar '*';
 ttitle center 'Current Stock Value by Store' skip 2 -
 center 'Prepared by ' &reporting_officer skip 2 -
-center  skip 2;
+center SYSDATE skip 2;
 btitle center format 999 SQL.PNO;
 
 break on storecode skip 2 on Report;
