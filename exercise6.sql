@@ -19,7 +19,7 @@ center SYSDATE skip 2;
 btitle center format 999 SQL.PNO;
 
 
-break on storecode skip 1 on description skip 1 on report;
+break on storecode skip2 on Report;
 compute sum of (Price * Quantity) on storecode;
 compute sum of (Price * Quanity) on report;
 
